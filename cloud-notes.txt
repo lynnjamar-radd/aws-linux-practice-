@@ -1,0 +1,1 @@
+aws Notes ec2=virtual server SSH= Secure shell Linux=operating system
