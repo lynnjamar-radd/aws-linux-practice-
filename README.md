@@ -40,3 +40,17 @@ The goal of this project is to build confidence working inside a Linux cloud env
 ## Author
 
 Jamar Lynn
+
+
+## IAM Role and S3 Read-Only Access
+
+- Created an IAM role named `EC2-S3-ReadOnly-Role`
+- Configured EC2 as the trusted AWS service
+- Attached the `AmazonS3ReadOnlyAccess` policy
+- Attached the IAM role to the running EC2 instance
+- Verified the role with `aws sts get-caller-identity`
+- Created a private S3 bucket named `jamar-aws-practice-2026-4827`
+- Confirmed the EC2 instance could list S3 buckets with `aws s3 ls`
+- Attempted to upload a test file and received `AccessDenied`
+- Verified that the role allows read access but blocks `s3:PutObject`
+- Practiced the AWS security principle of least privilege
