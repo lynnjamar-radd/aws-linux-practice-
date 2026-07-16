@@ -54,3 +54,18 @@ Jamar Lynn
 - Attempted to upload a test file and received `AccessDenied`
 - Verified that the role allows read access but blocks `s3:PutObject`
 - Practiced the AWS security principle of least privilege
+
+
+## Custom S3 Least-Privilege Policy
+
+- Created a customer-managed policy named `jamar-practice-bucket-ReadOnly`
+- Limited the EC2 role to the bucket `jamar-aws-practice-2026-4827`
+- Removed the broader `AmazonS3ReadOnlyAccess` policy
+- Confirmed `aws s3 ls` returned `AccessDenied`, blocking access to the full bucket list
+- Confirmed the approved bucket could still be listed
+- Uploaded `s3-read-test.txt` through the S3 console
+- Successfully read the object directly from S3 using the EC2 IAM role
+- Verified the role cannot upload, delete, or modify S3 objects
+- Demonstrated resource-specific least-privilege access
+
+
