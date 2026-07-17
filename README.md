@@ -69,3 +69,10 @@ Jamar Lynn
 - Demonstrated resource-specific least-privilege access
 
 
+
+## EC2 Restart Validation
+
+- Restarted the EC2 instance successfully
+- Confirmed Apache started automatically through systemd
+- Verified the website remained publicly accessible
+- Reconfirmed the IAM role and least-privilege S3 access after restart
