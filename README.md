@@ -76,3 +76,25 @@ Jamar Lynn
 - Confirmed Apache started automatically through systemd
 - Verified the website remained publicly accessible
 - Reconfirmed the IAM role and least-privilege S3 access after restart
+
+## EC2 Apache Website Deployment
+
+- Created a custom HTML webpage for the project
+- Hosted the webpage on an Amazon Linux 2023 EC2 instance
+- Used Apache HTTP Server to serve the website
+- Confirmed Apache was running locally with `curl http://localhost`
+- Configured the EC2 security group to allow inbound HTTP traffic on port 80
+- Successfully accessed the website publicly through the EC2 public IPv4 address
+- Verified the website remained available after restarting the EC2 instance
+
+### Skills Demonstrated
+
+- Amazon EC2
+- Linux command line
+- Apache HTTP Server
+- Security groups
+- SSH access
+- Git and GitHub
+- IAM roles
+- Amazon S3
+- Least-privilege permissions
