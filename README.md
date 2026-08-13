@@ -98,3 +98,10 @@ Jamar Lynn
 - IAM roles
 - Amazon S3
 - Least-privilege permissions
+## Automated Website Deployment
+
+- Created a Bash deployment script named `deploy.sh`
+- Automated copying `index.html` to the Apache web root at `/var/www/html/`
+- Made the script executable using `chmod +x deploy.sh`
+- Successfully deployed the website using `./deploy.sh`
+- Committed and pushed the deployment script to GitHub
